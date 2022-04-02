@@ -5,8 +5,6 @@
   stages {
     stage('Test') {
       steps {
-        echo $PATH
-        echo $Path 
         sh 'node --version'
       }
     }
