@@ -1,6 +1,9 @@
  pipeline {
-  agent { label 'Jen-Slave' } {
-    docker { image 'node:latest' }
+  agent {
+    docker { 
+    label 'Jen-Slave'  // both label and image
+     image 'node:latest' 
+    }
   }
   
   stages {
